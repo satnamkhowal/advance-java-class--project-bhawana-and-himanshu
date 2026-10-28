@@ -1,0 +1,22 @@
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+		Ops ops=new Ops();
+		ops.add(20, 30);
+		ops.add(12, 13,54);
+	}
+}
+class Ops{
+	public void add(int a,int b) {
+		int c=a+b;
+		System.out.println("addtion of two int values : "+c);
+	}
+	public void add(float a,float b) {
+		float c=a+b;
+		System.out.println("addtion of two float values : "+c);
+	}
+	public void add(int a, int b, int c) {
+		int d=a+b+c;
+		System.out.println("Addition ="+d);
+	}
+}

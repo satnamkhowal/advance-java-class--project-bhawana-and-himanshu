@@ -1,0 +1,26 @@
+
+public class SortingByComparableInterface {
+
+}
+
+class Studnet {
+	private int id;
+	private String name;
+	private float fee;
+	
+	public Studnet() {
+		super();
+	
+	}
+	public Studnet(int id, String name, float fee) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.fee = fee;
+	}
+	@Override
+	public String toString() {
+		return "Studnet [id=" + id + ", name=" + name + ", fee=" + fee + "]";
+	}
+	
+}

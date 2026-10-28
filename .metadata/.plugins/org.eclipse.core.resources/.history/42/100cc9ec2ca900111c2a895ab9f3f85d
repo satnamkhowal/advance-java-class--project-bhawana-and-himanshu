@@ -1,0 +1,12 @@
+package com.groot.abc;
+
+public class Test {
+	
+}
+abstract class A{
+	
+	public abstract void x();
+	public void y() {
+		System.out.println("Method with body");
+	}
+}

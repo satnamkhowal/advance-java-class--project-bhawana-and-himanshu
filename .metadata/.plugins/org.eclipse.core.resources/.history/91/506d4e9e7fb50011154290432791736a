@@ -1,0 +1,13 @@
+package com.groot.abc;
+
+public class Test {
+	public static void main(String[] args) {
+//		Class.forName("com.mysql.cj.jdbc.Driver");
+		XYZ.say();
+	}
+}
+class XYZ{
+	public static void say() throws Exception{
+		
+	}
+}

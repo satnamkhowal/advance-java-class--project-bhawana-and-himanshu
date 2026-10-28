@@ -1,0 +1,14 @@
+package abc;
+
+public class SuperEx {
+
+}
+class Animal {
+		String color="White";
+}
+class Dog extends Animal{
+	String color="black";
+	public void display() {
+		System.out.println(color);
+	}
+}

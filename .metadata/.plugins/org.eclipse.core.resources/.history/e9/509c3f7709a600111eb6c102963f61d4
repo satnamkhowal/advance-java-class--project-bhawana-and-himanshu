@@ -1,0 +1,42 @@
+package abc;
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+		Employee e=new Employee(101, "Jai", 30000, "SDE");
+		e.display();
+		System.out.println(e.hashCode());
+		System.out.println(Integer.toHexString(e.hashCode()));
+		System.out.println(e.toString());
+		System.out.println(e);
+
+	}
+}
+
+class Person{
+	int uid;
+	String name;
+	public Person(int a) {
+		
+	}
+}
+class Employee extends Person{
+	float salary;
+	String designation;
+	public Employee(int uid,String name, float salary,String  designation) {
+		this.uid=uid;
+		this.name=name;
+		this.salary=salary;
+		this.designation=designation;
+	}
+	public void display() {
+		System.out.println(uid);
+		System.out.println(name);
+		System.out.println(salary);
+		System.out.println(designation);
+	}
+	
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "I am an Employee";
+	}
+}

@@ -1,0 +1,90 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class SortingByComparableInterface {
+	public static void main(String[] args) {
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(new Student(15, "Rahul", 12000));
+		al.add(new Student(3, "Aman", 18000));
+		al.add(new Student(19, "Priya", 15000));
+		al.add(new Student(7, "Rohit", 22000));
+		al.add(new Student(1, "Neha", 10000));
+		al.add(new Student(12, "Vikas", 25000));
+		al.add(new Student(5, "Karan", 14000));
+		al.add(new Student(20, "Pooja", 19000));
+		al.add(new Student(9, "Mohit", 16000));
+		al.add(new Student(2, "Simran", 11000));
+		al.add(new Student(17, "Ankit", 21000));
+		al.add(new Student(6, "Sneha", 13000));
+		al.add(new Student(14, "Deepak", 17000));
+		al.add(new Student(4, "Riya", 24000));
+		al.add(new Student(11, "Manish", 9000));
+		al.add(new Student(18, "Kavita", 20000));
+		al.add(new Student(8, "Arjun", 12500));
+		al.add(new Student(16, "Meena", 23000));
+		al.add(new Student(10, "Varun", 14500));
+		al.add(new Student(13, "Nisha", 19500));
+		ArrayList<Student> al2=new ArrayList<Student>();
+		
+		Collections.sort(al);
+		for(Student st:al) {
+			System.out.println(st);
+		}
+		
+	}
+}
+
+class Student implements Comparable<Student>{
+	private int id;
+	private String name;
+	private float fee;
+
+	public Student() {
+		super();
+
+	}
+
+	public Student(int id, String name, float fee) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.fee = fee;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public float getFee() {
+		return fee;
+	}
+
+	public void setFee(float fee) {
+		this.fee = fee;
+	}
+
+	@Override
+	public String toString() {
+		return "Studnet [id=" + id + ", name=" + name + ", fee=" + fee + "]";
+	}
+
+	@Override
+	public int compareTo(Student o2) {
+		// TODO Auto-generated method stub
+		return o2.id-this.id;
+	}
+
+}

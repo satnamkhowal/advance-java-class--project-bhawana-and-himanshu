@@ -1,0 +1,9 @@
+package com.groot.abc;
+
+public class Test {
+	
+}
+abstract class A{
+	
+	public abstract void x();
+}

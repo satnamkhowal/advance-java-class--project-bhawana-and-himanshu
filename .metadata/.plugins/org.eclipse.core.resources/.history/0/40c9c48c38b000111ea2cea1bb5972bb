@@ -1,0 +1,21 @@
+package com.groot.pqr;
+import java.awt.DisplayMode;
+
+import com.groot.pqr1.*;
+public class Test {
+	public static void main(String[] args) {
+		A a =new A();
+//		a.say();
+		X x=new X();
+		System.out.println();
+//		x.say();
+		x.display();
+		
+	}
+}
+class X extends A{
+	X(){
+		say();
+		display();
+	}
+}

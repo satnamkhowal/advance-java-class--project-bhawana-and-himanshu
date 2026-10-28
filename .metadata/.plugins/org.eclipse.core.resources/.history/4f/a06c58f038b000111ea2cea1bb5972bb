@@ -1,0 +1,18 @@
+package com.groot.pqr;
+import java.awt.DisplayMode;
+
+import com.groot.pqr1.*;
+public class Test {
+	public static void main(String[] args) {
+	OuterClass out=new OuterClass();
+		
+	}
+} 
+class OuterClass{
+	int a=20;
+	class InnerClass{
+		public InnerClass() {
+			System.out.println(a);
+		}
+	}
+}

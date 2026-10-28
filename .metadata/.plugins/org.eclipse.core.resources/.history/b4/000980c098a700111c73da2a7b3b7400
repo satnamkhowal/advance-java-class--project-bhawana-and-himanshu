@@ -1,0 +1,27 @@
+package abc.xyz;
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+		Animal a=new Dog();
+		a.eat();
+
+	}
+}
+// Run time ploymorphism
+
+class Animal{
+	public void eat() {
+		System.out.println("Animal is eating");
+	}
+}
+class Dog extends Animal{
+	
+	@Override
+	public void eat() {
+		System.out.println("Dog is eating bread");
+	}
+	
+	public void bark() {
+		System.out.println("Dog is barking");
+	}
+}

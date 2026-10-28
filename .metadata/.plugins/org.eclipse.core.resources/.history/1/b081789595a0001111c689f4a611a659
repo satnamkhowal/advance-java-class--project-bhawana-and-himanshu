@@ -1,0 +1,13 @@
+
+public class ValidateUser {
+		public static void main(String[] args) {
+			
+		}
+}
+class Logic{
+	public boolean validate(String userName, String password) {
+		if(userName.equals("admin")&& password.equals("1234")) {
+			return true;
+		}
+	}
+}

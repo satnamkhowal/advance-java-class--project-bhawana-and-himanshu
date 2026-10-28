@@ -1,0 +1,9 @@
+package com.groot.interfaceex;
+
+public class Test {
+		public static void main(String[] args) {
+
+
+		}
+}
+interface 

@@ -1,0 +1,10 @@
+package com.groot.abc;
+
+import javax.servlet.Servlet;
+
+public class MyServlet implements Servlet{
+	public MyServlet() {
+		System.out.println("I am non args type constructor");
+	}
+
+}

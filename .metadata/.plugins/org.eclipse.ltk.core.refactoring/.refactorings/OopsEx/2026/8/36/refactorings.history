@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MethodOverLoadingEx.java&apos; to &apos;OopsEx/src/abc&apos;&#x0D;&#x0A;- Original project: &apos;OopsEx&apos;&#x0D;&#x0A;- Destination element: &apos;OopsEx/src/abc&apos;&#x0D;&#x0A;- Original element: &apos;MethodOverLoadingEx.java&apos;" description="Copy compilation unit" destination="/src&lt;abc" element1="/src&lt;{MethodOverLoadingEx.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1788178873614" units="1" version="1.0"/>
+</session>

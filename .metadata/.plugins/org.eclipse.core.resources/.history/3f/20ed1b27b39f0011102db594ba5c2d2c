@@ -1,0 +1,13 @@
+
+public class Test {
+	public static void main(String[] args) {
+		
+		
+	
+	}
+}
+class MyOps{
+	public void saySomthing() {
+		System.out.println("Hello");
+	}
+}

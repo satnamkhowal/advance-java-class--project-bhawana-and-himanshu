@@ -1,0 +1,25 @@
+package abc;
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+	
+	}
+}
+
+class Person{
+	int uid;
+	String name;
+}
+class Employee extends Person{
+	float salary;
+	String designation;
+	public Employee(int uid,String name, float salary,String  designation) {
+		this.uid=uid;
+		this.name=name;
+		this.salary=salary;
+		this.designation=designation;
+	}
+	public void display() {
+		System.out.println();
+	}
+}

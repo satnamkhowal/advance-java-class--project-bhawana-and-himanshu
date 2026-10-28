@@ -1,0 +1,27 @@
+
+public class Initialzation {
+	public static void main(String[] args) {
+		Student st=new Student();
+		st.setValues(101, "Ram", 3000);
+//		System.out.println(st.id);
+//		System.out.println(st.name);
+//		System.out.println(st.fee);
+		st.display();
+	}
+}
+class Student {
+	int id;
+	String name;
+	float fee;
+	public void setValues(int id, String name, float fee) {
+		this.id=id;
+		this.name=name;
+		this.fee=fee;
+	}
+	
+	public void display() {
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(fee);
+	}
+	}

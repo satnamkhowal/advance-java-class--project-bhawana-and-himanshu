@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		MyOps myOps=new MyOps();
+		myOps.getFact(21);
+		 String s=myOps.getName();
+		System.out.println(s);
+		System.out.println(myOps.getFullName("jai", "Singh"));
+	
+	}
+}
+class MyOps{
+	/*
+	 * 1. Method without parameter and without return type
+	 * 2. Method with Parameters or arguments and without return type
+	 * 3. Method without parameter or argument and with return type
+	 * 3. Method with return type and with argument
+	 */
+	
+	public String  getFullName(String firstName, String lastName) {
+		return firstName+" "+lastName;
+	}
+	
+	public String getName() {
+		return "Shivam";
+	}
+	
+	
+	public void add(int a, int b) {
+		int c=a+b;
+		System.out.println("Addition two numbers="+c);
+	}
+	public void getFact(int n) {
+		// 5 =5*4*3*2*1
+		long fact=1;
+		for(int i=1;i<=n;i++) {
+			fact=fact*(long)i;
+		}
+		System.out.println("Factoruial ="+fact);
+	}
+	
+	public void saySomthing() {
+		System.out.println("Hello");
+		System.out.println("Shubham");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+	}
+	public void sumtwo() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of a=");
+		int a=sc.nextInt();
+		System.out.println("Enter Value of b=");
+		int b=sc.nextInt();
+		int c=a+b;
+		System.out.println("Addtion ="+c);
+	}
+}

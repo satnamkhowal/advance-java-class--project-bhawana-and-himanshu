@@ -1,0 +1,15 @@
+
+public class Initialzation {
+	public static void main(String[] args) {
+		new Student();
+	}
+}
+class Student {
+	int id;
+	String name;
+	float fee;
+	public Student(){
+		System.out.println("I am non parameterize conttructor");
+	}
+	
+}

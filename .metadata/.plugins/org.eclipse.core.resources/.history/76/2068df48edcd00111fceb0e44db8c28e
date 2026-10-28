@@ -1,0 +1,33 @@
+package com.groot.abc.paytm;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetExample {
+	public static void main(String[] args) {
+		Set<Integer> set1=new HashSet<Integer>();
+		set1.add(19);
+		set1.add(29);
+		set1.add(30);
+		set1.add(59);
+		set1.add(19);
+		set1.add(null);
+		set1.add(null);
+		System.out.println("set 1"+set1);
+		HashSet<Integer> set2=new HashSet<Integer>();
+		set2.add(null);
+		set2.add(12);
+		set2.add(45);
+		set2.add(67);
+		set2.add(67);
+		set2.add(19);
+		set2.add(59);
+		System.out.println("set 2="+set2);
+		HashSet<Integer> set3=new HashSet<Integer>(set1);
+		set3.remove(set2)
+		System.out.println(set3);
+		
+		
+	}
+
+}

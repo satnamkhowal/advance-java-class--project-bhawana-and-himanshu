@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		MyOps myOps=new MyOps();
+		
+		myOps.saySomthing();
+		myOps.saySomthing();
+		myOps.saySomthing();
+		myOps.saySomthing();
+		
+	
+	}
+}
+class MyOps{
+	public void saySomthing() {
+		System.out.println("Hello");
+		System.out.println("Shubham");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+	}
+	public void sumtwo() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of a=");
+		int a=sc.nextInt();
+		System.out.println("Enter Value of b=");
+		int b=sc.nextInt();
+	}
+}

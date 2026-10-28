@@ -1,0 +1,15 @@
+package com.groot.pqr;
+import java.awt.DisplayMode;
+
+import com.groot.pqr1.*;
+public class Test {
+	public static void main(String[] args) {
+	//OuterClass out=new OuterClass();
+//	OuterClass.InnerClass inc=new OuterClass.InnerClass();
+	}
+} 
+class Animal{
+	public void eat() {
+		System.out.println("Hello ");
+	}
+}

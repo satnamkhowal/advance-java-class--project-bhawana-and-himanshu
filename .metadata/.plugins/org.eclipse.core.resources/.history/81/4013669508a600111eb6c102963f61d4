@@ -1,0 +1,11 @@
+package abc;
+
+public class SuperEx {
+
+}
+class Animal {
+		String color="White";
+}
+class Dog extends Animal{
+	String color="black";
+}

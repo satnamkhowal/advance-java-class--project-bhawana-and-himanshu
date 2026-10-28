@@ -1,0 +1,38 @@
+package com.groot.interfaceex;
+
+public class Test {
+		public static void main(String[] args) {
+
+		int i=	A.y;
+//		System.out.println(A.y);
+		}
+}
+class Z{
+	public Z() {
+		System.out.println("HELLO, i am constucotr from class Z");
+	}
+}
+class A extends Z{
+	final int x;
+	static final int  y;
+	static {
+		y=10;
+		System.out.println("Hello I am static block");
+	}
+	{
+		System.out.println("Hello, I am instace initialzer block");
+	}
+	public A() {
+		x=10;
+		System.out.println(y);
+		System.out.println("i am constructor without args");
+	}
+	public A(int a) {
+		x=a;
+//		this();
+		
+	}
+	public void m() {
+		System.out.println(y);
+	}
+}

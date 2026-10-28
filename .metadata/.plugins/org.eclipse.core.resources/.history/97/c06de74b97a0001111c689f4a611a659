@@ -1,0 +1,24 @@
+
+public class Initialzation {
+	public static void main(String[] args) {
+		Student st=new Student();
+		st.setValues(101, "Ram", 3000);
+		st.display();
+	}
+}
+class Student {
+	int id;
+	String name;
+	float fee;
+	public void setValues(int i, String n, float f) {
+		id=i;
+		name=n;
+		fee=f;
+	}
+	public void display() {
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(fee);
+	}
+
+	}

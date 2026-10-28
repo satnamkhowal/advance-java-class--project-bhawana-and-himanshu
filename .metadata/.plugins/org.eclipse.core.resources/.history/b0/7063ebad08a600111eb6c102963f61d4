@@ -1,0 +1,16 @@
+package abc;
+
+public class SuperEx {
+	public static void main(String[] args) {
+		new Dog();
+	}
+}
+class Animal {
+		String color="White";
+}
+class Dog extends Animal{
+	String color="black";
+	public void display() {
+		System.out.println(color);
+	}
+}

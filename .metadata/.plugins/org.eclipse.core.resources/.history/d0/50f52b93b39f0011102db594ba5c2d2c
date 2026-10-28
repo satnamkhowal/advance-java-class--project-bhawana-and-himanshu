@@ -1,0 +1,22 @@
+
+public class Test {
+	public static void main(String[] args) {
+		MyOps myOps=new MyOps();
+		
+		myOps.saySomthing();
+		myOps.saySomthing();
+		myOps.saySomthing();
+		myOps.saySomthing();
+		
+	
+	}
+}
+class MyOps{
+	public void saySomthing() {
+		System.out.println("Hello");
+		System.out.println("Shubham");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+	}
+}

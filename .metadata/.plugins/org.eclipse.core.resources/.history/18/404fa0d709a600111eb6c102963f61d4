@@ -1,0 +1,40 @@
+package abc;
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+		Employee e=new Employee(101, "Jai", 30000, "SDE");
+		
+
+	}
+}
+
+class Person{
+	int uid;
+	String name;
+	public Person(int uid,String name) {
+		this.uid=uid;
+		this.name=name;
+	}
+}
+class Employee extends Person{
+	float salary;
+	String designation;
+	public Employee(int uid,String name, float salary,String  designation) {
+		super(10);
+		this.uid=uid;
+		this.name=name;
+		this.salary=salary;
+		this.designation=designation;
+	}
+	public void display() {
+		System.out.println(uid);
+		System.out.println(name);
+		System.out.println(salary);
+		System.out.println(designation);
+	}
+	
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "I am an Employee";
+	}
+}

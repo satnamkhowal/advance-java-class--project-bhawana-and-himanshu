@@ -1,0 +1,15 @@
+package com.groot.abc;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println(" Before exception");
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			System.out.println(" driver loaded ");
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		System.out.println("After Exception");
+	}
+}

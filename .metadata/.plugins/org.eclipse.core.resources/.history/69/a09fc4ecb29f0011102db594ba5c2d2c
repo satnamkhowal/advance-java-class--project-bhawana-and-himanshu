@@ -1,0 +1,23 @@
+
+public class Test {
+	public static void main(String[] args) {
+		Student st=new Student();
+		System.out.println("Before Initialzation : ");
+		System.out.println(st.id);
+		System.out.println(st.name);
+		System.out.println(st.fee);
+		st.id=101;
+		st.name="jai";
+		st.fee=3333.45f;
+		System.out.println("After Initialzation");
+		System.out.println(st.id);
+		System.out.println(st.name);
+		System.out.println(st.fee);
+	}
+}
+class Student{
+	int id;
+	String name;
+	 float fee;
+	 
+}

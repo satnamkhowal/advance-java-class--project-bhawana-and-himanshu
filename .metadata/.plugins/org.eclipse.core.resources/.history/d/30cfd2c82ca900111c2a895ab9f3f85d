@@ -1,0 +1,11 @@
+package com.groot.abc;
+
+public class Test {
+	
+}
+class A{
+	
+	public void x() {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package abc.xyz;
+
+public class MethodOverLoadingEx {
+	public static void main(String[] args) {
+
+	}
+}
+
+class Animal{
+	public void eat() {
+		System.out.println("Animal is eating");
+	}
+}

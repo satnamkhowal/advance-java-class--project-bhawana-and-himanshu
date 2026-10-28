@@ -1,0 +1,17 @@
+
+public class Test {
+	public static void main(String[] args) {
+		Student st=new Student();
+		st.id=101;
+		st.name="jai";
+		st.fee=3333.45f;
+		System.out.println(st.id);
+		System.out.println(st.name);
+	}
+}
+class Student{
+	int id;
+	String name;
+	 float fee;
+	 
+}

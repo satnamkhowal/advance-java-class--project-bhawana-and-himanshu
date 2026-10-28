@@ -1,0 +1,46 @@
+
+public class Initialzation {
+	public static void main(String[] args) {
+
+		new Employee();
+		new Employee(10);
+	}
+}
+
+class Student {
+	int id;
+	String name;
+	float fee;
+	public Student(int id,String name,float fee) {
+		this.id=id;
+		this.name=name;
+		this.fee=fee;
+	}
+	public void display() {
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(fee);
+	}
+
+	public Student(int a) {
+		System.out.println("I am parameterize conttructor");
+	}
+
+}
+
+class Person {
+	public Person() {
+		System.out.println("I am Person non paramertize construtor");
+	}
+}
+
+class Employee {
+	public Employee() {
+			System.out.println("I am non parameterize constructor");
+	}
+
+	public Employee(int a) {
+			System.out.println("I am parametrize contructor with int args");
+	}
+
+}

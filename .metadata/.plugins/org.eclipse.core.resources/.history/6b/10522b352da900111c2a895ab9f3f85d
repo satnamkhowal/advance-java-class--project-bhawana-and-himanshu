@@ -1,0 +1,22 @@
+package com.groot.abc;
+
+public class Test {
+	public static void main(String[] args) {
+
+	}
+}
+
+abstract class A {
+
+	public abstract void x();
+
+	public abstract void z();
+
+	public void y() {
+		System.out.println("Method with body");
+	}
+}
+
+class B extends A {
+
+}

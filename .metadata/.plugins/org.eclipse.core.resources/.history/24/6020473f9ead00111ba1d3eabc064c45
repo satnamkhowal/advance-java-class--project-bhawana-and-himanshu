@@ -1,0 +1,16 @@
+package com.groot.interfaceex;
+
+public class Test {
+		public static void main(String[] args) {
+			Z z=new Z();
+			z.display();
+			z.say();
+			System.out.println(X.a);
+		}
+}
+interface  A{
+	public void say();
+}
+interface B{
+	public void say();
+}
