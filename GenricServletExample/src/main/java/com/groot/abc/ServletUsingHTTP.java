@@ -49,8 +49,10 @@ public class ServletUsingHTTP extends HttpServlet {
 			ps.setString(3,req.getParameter("password"));
 			ps.setString(4,req.getParameter("message"));
 			int i=ps.executeUpdate();
-			if(i>0) {
-				out.print("<h5>record inserted<h5>");
+			if(i==0) {
+				res.sendRedirect("Welcome.html");
+			}else {
+				res.sendRedirect("error.html");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
