@@ -10,11 +10,12 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <servlet>
-  		<servlet-name>register-servlet</servlet-name>
-  		<servlet-class>com.groot.abc.RegisterServlet</servlet-class>
+    <servlet-name>register-servlet</servlet-name>
+    <servlet-class>com.groot.abc.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>register-servlet</servlet-name>
-  	<url-pattern>/register-servlet</url-pattern>
+    <servlet-name>register-servlet</servlet-name>
+    <url-pattern>/register-servlet</url-pattern>
   </servlet-mapping>
+
 </web-app>

@@ -28,6 +28,7 @@ public class viewData extends HttpServlet {
 		out.print("<td>ID</td>");
 		out.print("<td>Name</td>");
 		out.print("<td>Email</td>");
+		out.print("<td>Action</td>");
 		out.print("</tr>");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -59,6 +60,11 @@ public class viewData extends HttpServlet {
 				out.print("<td>"+id+"</td>");
 				out.print("<td>"+name+"</td>");
 				out.print("<td>"+email+"</td>");
+				out.print("<td> ");
+				out.print("<a href='./edit'>Edit</a>");
+				out.println(" <a href='./delete?id="+rs.getInt("id")+"'>Delete</a>");
+				
+				out.print("</td>");
 				out.print("</tr>");
 			
 			}
