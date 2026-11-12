@@ -61,7 +61,7 @@ public class viewData extends HttpServlet {
 				out.print("<td>"+name+"</td>");
 				out.print("<td>"+email+"</td>");
 				out.print("<td> ");
-				out.print("<a href='./edit'>Edit</a>");
+				out.print("<a href='./edit?id="+rs.getInt("id")+"'>Edit</a>");
 				out.println(" <a href='./delete?id="+rs.getInt("id")+"'>Delete</a>");
 				
 				out.print("</td>");
