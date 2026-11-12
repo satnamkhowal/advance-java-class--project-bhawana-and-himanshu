@@ -40,28 +40,36 @@ public class EditServlet extends HttpServlet {
 		int id=	Integer.valueOf(req.getParameter("id"));
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			out.print("driver loaded");
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			out.print("excection occured "+e.getMessage());
 			e.printStackTrace();
 		}
 		Connection conn=null;
 		try {
 			conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3366/collage","root","root");
-			out.print("Connection done");
 		}catch (Exception e) {
 			// TODO: handle exception
 			out.print("excection occured "+e.getMessage());
 			e.printStackTrace();
 		}
 		try {
-			PreparedStatement ps= conn.prepareStatement("select * from register where id=?");
+			PreparedStatement ps= conn.prepareStatement("select * from student where id=?");
 			ps.setInt(1, id);
 			ResultSet rs= ps.executeQuery();
+			rs.next();
+			out.print("<h4>Welcome</h4>");
+			out.print("<form action='./UpdateStudent'>");
+			out.print("<input type='hidden' name='id' value='"+id+"'/>");
+			out.print("Name : <input type='text' name='n1' value='"+rs.getString("name") +"'/><br/>");
+			out.print("Email : <input type='email' name='e1' value='"+rs.getString("email") +"'>");
+			
+			out.print("<br/><input type='submit'/>");
+			out.print("</form>");
+			out.print("<h4>Welcome</h4>");
 		}catch (Exception e) {
 			// TODO: handle exception
+		e.printStackTrace();
 		}
 	
 	}
