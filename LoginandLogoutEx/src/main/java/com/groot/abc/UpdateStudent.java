@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.groot.db.JDBCDBOPS;
+
 /**
  * Servlet implementation class UpdateStudent
  */
@@ -37,21 +39,7 @@ public class UpdateStudent extends HttpServlet {
 		String email=req.getParameter("e1");
 		int id=	Integer.valueOf(req.getParameter("id"));
 		PrintWriter out=res.getWriter();
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Connection conn=null;
-		try {
-			conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3366/collage","root","root");
-		}catch (Exception e) {
-			// TODO: handle exception
-			out.print("excection occured "+e.getMessage());
-			e.printStackTrace();
-		}
+		Connection conn=JDBCDBOPS.getConnection();
 		try {
 			PreparedStatement ps= conn.prepareStatement("update student set name=?,email=? where id=?");
 			ps.setString(1, name);
