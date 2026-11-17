@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | MyPlatform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #EFF6FF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            width: 90%;
+            max-width: 420px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+        }
+
+        .login-logo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .login-logo .logo-icon {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #101828;
+            margin-bottom: 8px;
+        }
+
+        .login-container .subtitle {
+            text-align: center;
+            color: #667085;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #344054;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #D0D5DD;
+            border-radius: 7px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #155EEF;
+            box-shadow: 0 0 0 3px #DBEAFE;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .form-options a,
+        .register-link a {
+            color: #155EEF;
+            font-weight: 600;
+        }
+
+        .login-btn {
+            width: 100%;
+            border: none;
+            background: #155EEF;
+            color: white;
+            padding: 14px;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #1046B5;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #667085;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #667085;
+            font-size: 13px;
+        }
+
+        @media(max-width: 480px) {
+            .login-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-logo">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">M</span>
+                MyPlatform
+            </a>
+        </div>
+
+        <h2>Welcome Back!</h2>
+
+        <p class="subtitle">
+            Please login to your account.
+        </p>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required>
+            </div>
+
+            <div class="form-options">
+
+                <label>
+                    <input type="checkbox" id="remember">
+                    Remember me
+                </label>
+
+                <a href="forgot-password.html">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+        </form>
+
+        <div class="register-link">
+            Don't have an account?
+            <a href="register.html">Register Now</a>
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

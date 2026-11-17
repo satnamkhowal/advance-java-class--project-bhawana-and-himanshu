@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class JDBCDBOPS {
-	public static final String DB_URL="jdbc:mysql://127.0.0.1:3366/collage";
+	public static final String DB_URL="jdbc:mysql://127.0.0.1:3366/collage2";
 	public static final String DB_USER_NAME="root";
 	public static final String DB_USER_PASSWORD="root";
 	public static void loadDriverClass() {

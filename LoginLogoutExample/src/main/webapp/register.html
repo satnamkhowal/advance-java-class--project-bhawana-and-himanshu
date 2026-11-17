@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | MyPlatform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #EFF6FF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        .register-container {
+            width: 90%;
+            max-width: 480px;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+        }
+
+        .register-logo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .register-container h2 {
+            text-align: center;
+            color: #101828;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #667085;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: #344054;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #D0D5DD;
+            border-radius: 7px;
+            font-size: 14px;
+            outline: none;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #155EEF;
+            box-shadow: 0 0 0 3px #DBEAFE;
+        }
+
+        .register-btn {
+            width: 100%;
+            border: none;
+            background: #155EEF;
+            color: white;
+            padding: 14px;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .register-btn:hover {
+            background: #1046B5;
+        }
+
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 13px;
+            color: #667085;
+        }
+
+        .terms input {
+            margin-top: 4px;
+        }
+
+        .terms a,
+        .login-link a {
+            color: #155EEF;
+            font-weight: 600;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 14px;
+            color: #667085;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 18px;
+            color: #667085;
+            font-size: 13px;
+        }
+
+        @media(max-width: 480px) {
+            .register-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <!-- Logo -->
+        <div class="register-logo">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">M</span>
+                MyPlatform
+            </a>
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p class="subtitle">
+            Register now and join our platform.
+        </p>
+
+        <!-- Registration Form -->
+        <form id="registerForm">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Enter your mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create password"
+                    minlength="8"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    minlength="8"
+                    required>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+
+                <label for="terms">
+                    I agree to the
+                    <a href="#">Terms & Conditions</a>
+                    and Privacy Policy.
+                </label>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Create Account
+            </button>
+
+        </form>
+
+        <div class="login-link">
+            Already have an account?
+            <a href="login.html">Login Now</a>
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
